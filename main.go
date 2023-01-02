@@ -31,7 +31,7 @@ type Response struct {
 func cookieAdd(c echo.Context) error {
 	u := &Response{
 		Message:       "Tu galleta fue añadida",
-		CurrentCookie: 11,
+		CurrentCookie: 12,
 	}
 	return c.JSON(http.StatusOK, u)
 }
