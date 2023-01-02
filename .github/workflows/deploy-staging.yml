@@ -25,7 +25,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: '.'
-          target: '/var/www/staging.ordermanager.sebacz.cl'
+          target: '/var/www/ordermanager.staging.sebacz.cl'
 
       #- name: Add permission
       #  uses: appleboy/ssh-action@master
