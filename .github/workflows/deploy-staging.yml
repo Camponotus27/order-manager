@@ -13,7 +13,7 @@ jobs:
         with:
           go-version: '1.19' # The Go version to download (if necessary) and use.
 
-      - run: go build -a -ldflags="-w" -o app ./main.go
+      - run: GOOS=linux GOARCH=amd64 go build -a -ldflags="-w" -o app ./main.go
       - run: ls
 
       - name: Copy repository contents via scp
@@ -24,7 +24,7 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
-          source: '.'
+          source: './app'
           target: '/var/www/ordermanager.staging.sebacz.cl'
 
       #- name: Add permission
