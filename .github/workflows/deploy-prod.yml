@@ -25,4 +25,13 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: './app'
-          target: '/var/www/ordermanager.sebacz.com'
+          target: '/var/www/ordermanager.sebacz.co'
+
+      - name: Reload file go
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.SSHKEY }}
+          script: sudo service ordermanager restart &&
