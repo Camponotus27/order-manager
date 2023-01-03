@@ -1,0 +1,9 @@
+server {
+    # Listen HTTP
+    server_name ordermanager.sebacz.com www.ordermanager.sebacz.com;
+
+    # Proxy Config
+    location / {
+            proxy_pass http://localhost:8080;
+    }
+}
