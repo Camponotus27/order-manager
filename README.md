@@ -6,6 +6,15 @@ https://echo.labstack.com/guide/
 
 # order-manager
 
+URL: http://ordermanager.sebacz.com/cookie/add
+
+# Como usar git
+
+- Posicionarse con la terminal en el proyecto
+- Para "Descargar" el codigo se usa `git pull origin main`
+- Para "Subir" el codifo se usa, `git add .` + `git commit -m "Algun comentario"` + `git push origin main`
+- Una vez subido el codigo se desplegará automaticamente
+
 # VPS config
 
 - Se configuró GitHub actions
