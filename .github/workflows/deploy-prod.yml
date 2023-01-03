@@ -25,7 +25,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: './app'
-          target: '/var/www/ordermanager.sebacz.co'
+          target: '/var/www/ordermanager.sebacz.com'
 
       #- name: Reload file go
       #  uses: appleboy/ssh-action@master
