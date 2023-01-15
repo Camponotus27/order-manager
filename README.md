@@ -18,5 +18,5 @@ URL: http://ordermanager.sebacz.com/cookie/add
 # VPS config
 
 - Se configuró GitHub actions
-- Seguir siguente tuturial para arrancar aplicacin https://dev.to/koddr/how-to-deploy-golang-application-on-any-gnu-linux-system-but-without-docker-59m1#toc
+- Seguir siguiente tutorial para arrancar aplicacin https://dev.to/koddr/how-to-deploy-golang-application-on-any-gnu-linux-system-but-without-docker-59m1#toc
 - La configuracion de nginx final esta en deploy/nginx.config.txt

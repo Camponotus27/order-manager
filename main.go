@@ -18,6 +18,7 @@ func main() {
 	// Routes
 	e.GET("/cookie/add", cookieAdd)
 	e.GET("/cookie/subtract", cookieSubtract)
+	e.GET("/cookie", cookieCurrent)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":8080"))
@@ -40,6 +41,14 @@ func cookieSubtract(c echo.Context) error {
 	u := &Response{
 		Message:       "Tu galleta fue restada",
 		CurrentCookie: 2,
+	}
+	return c.JSON(http.StatusOK, u)
+}
+
+func cookieCurrent(c echo.Context) error {
+	u := &Response{
+		Message:       "Galletas actuales",
+		CurrentCookie: 5,
 	}
 	return c.JSON(http.StatusOK, u)
 }
