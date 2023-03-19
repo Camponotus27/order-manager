@@ -24,7 +24,7 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
-          source: './app'
+          source: './app/main'
           target: '/var/www/ordermanager.sebacz.com'
 
       - name: Reload file go
